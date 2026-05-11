@@ -11,7 +11,7 @@ export const galleryCategories = [
         title: 'Vrindavan Midnight Kirtan',
         slug: 'vrindavan-midnight-kirtan',
         description:
-          'A slower, contemplative album inspired by the late-night temple atmosphere and the steady current of maha-mantra meditation.',
+          'A slower, contemplative album inspired by the late-night temple atmosphere and the steady current of maha-mantra.',
         coverImage:
           '/assets/gallery/audio/vrindavan-midnight-kirtan/cover.jpg',
         items: [
@@ -39,10 +39,10 @@ export const galleryCategories = [
         ],
       },
       {
-        title: 'Aindra Smarana Sessions',
-        slug: 'aindra-smarana-sessions',
+        title: 'Maharaj',
+        slug: 'Sankirtan',
         description:
-          'A fuller rhythmic set shaped by strong call-and-response energy, mridanga drive, and the mood of collective absorption.',
+          'Some kirtans of The pillars of Srila Prabhupads movement',
         coverImage: '/assets/gallery/audio/aindra-smarana-sessions/cover.jpg',
         items: [
           {
@@ -74,7 +74,7 @@ export const galleryCategories = [
     key: 'video',
     title: 'Video',
     description:
-      'Locally archived visual recordings for festival memories, temple programs, and kirtan processions.',
+      'Locally archived visual Videos for festival memories, temple programs, and kirtans.',
     page: '/gallery-video.html',
     cta: 'Watch the kirtan footage',
     albums: [

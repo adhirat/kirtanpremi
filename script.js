@@ -318,8 +318,8 @@ function renderOverview() {
 
 function renderAudioAlbum(album) {
   return `
-    <article class="gallery-album-card">
-      <div class="gallery-album-header">
+    <details class="gallery-album-card gallery-album-disclosure">
+      <summary class="gallery-album-header">
         <div class="gallery-album-cover">
           ${renderAlbumCover(album, 'Audio album')}
         </div>
@@ -327,9 +327,15 @@ function renderAudioAlbum(album) {
           <span class="gallery-section-label">Audio album</span>
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
-          <p class="gallery-asset-path">Folder: /assets/gallery/audio/${album.slug}/</p>
+          <div class="gallery-album-summary-footer">
+            <p class="gallery-asset-path">Folder: /assets/gallery/audio/${album.slug}/</p>
+            <span class="gallery-album-toggle-indicator" aria-hidden="true">
+              <span class="gallery-album-toggle-text">View album</span>
+              <span class="gallery-album-toggle-icon">▾</span>
+            </span>
+          </div>
         </div>
-      </div>
+      </summary>
       <div class="gallery-album-body">
         ${album.items
           .map(
@@ -355,14 +361,14 @@ function renderAudioAlbum(album) {
           )
           .join('')}
       </div>
-    </article>
+    </details>
   `;
 }
 
 function renderVideoAlbum(album) {
   return `
-    <article class="gallery-album-card">
-      <div class="gallery-album-header">
+    <details class="gallery-album-card gallery-album-disclosure">
+      <summary class="gallery-album-header">
         <div class="gallery-album-cover">
           ${renderAlbumCover(album, 'Video album')}
         </div>
@@ -370,10 +376,16 @@ function renderVideoAlbum(album) {
           <span class="gallery-section-label">Video album</span>
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
-          <p class="gallery-asset-path">Folder: /assets/gallery/video/${album.slug}/</p>
+          <div class="gallery-album-summary-footer">
+            <p class="gallery-asset-path">Folder: /assets/gallery/video/${album.slug}/</p>
+            <span class="gallery-album-toggle-indicator" aria-hidden="true">
+              <span class="gallery-album-toggle-text">View album</span>
+              <span class="gallery-album-toggle-icon">▾</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="gallery-media-grid gallery-video-grid">
+      </summary>
+      <div class="gallery-album-body gallery-media-grid gallery-video-grid">
         ${album.items
           .map(
             (item) => `
@@ -396,14 +408,14 @@ function renderVideoAlbum(album) {
           )
           .join('')}
       </div>
-    </article>
+    </details>
   `;
 }
 
 function renderPhotosAlbum(album) {
   return `
-    <article class="gallery-album-card">
-      <div class="gallery-album-header">
+    <details class="gallery-album-card gallery-album-disclosure">
+      <summary class="gallery-album-header">
         <div class="gallery-album-cover">
           ${renderAlbumCover(album, 'Photo album')}
         </div>
@@ -411,10 +423,16 @@ function renderPhotosAlbum(album) {
           <span class="gallery-section-label">Photo album</span>
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
-          <p class="gallery-asset-path">Folder: /assets/gallery/photos/${album.slug}/</p>
+          <div class="gallery-album-summary-footer">
+            <p class="gallery-asset-path">Folder: /assets/gallery/photos/${album.slug}/</p>
+            <span class="gallery-album-toggle-indicator" aria-hidden="true">
+              <span class="gallery-album-toggle-text">View album</span>
+              <span class="gallery-album-toggle-icon">▾</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="gallery-media-grid gallery-photo-grid">
+      </summary>
+      <div class="gallery-album-body gallery-media-grid gallery-photo-grid">
         ${album.items
           .map(
             (item) => `
@@ -437,7 +455,7 @@ function renderPhotosAlbum(album) {
           )
           .join('')}
       </div>
-    </article>
+    </details>
   `;
 }
 
