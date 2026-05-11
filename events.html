@@ -24,12 +24,22 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/bio.html">Bio</a></li>
-                <li><a href="/events.html">Events</a></li>
-                <li><a href="/philosophy.html">Philosophy</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/donations.html">Donations</a></li>
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/bio.html">Bio</a></li>
+                <li class="nav-item"><a href="/events.html">Events</a></li>
+                <li class="nav-item"><a href="/philosophy.html">Philosophy</a></li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="/gallery.html" class="nav-parent-link">Gallery</a>
+                    <button class="nav-dropdown-toggle" type="button" aria-label="Toggle gallery menu" aria-expanded="false" aria-controls="gallerySubmenu">
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="nav-dropdown-menu" id="gallerySubmenu">
+                        <a href="/gallery-audio.html">Audio</a>
+                        <a href="/gallery-video.html">Video</a>
+                        <a href="/gallery-photos.html">Photos</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="/donations.html">Donations</a></li>
             </ul>
         </nav>
     </header>
