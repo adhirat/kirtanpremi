@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kirtan Premi Prabhu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/" class="logo-link"><span class="logo-text">Kirtan Premi</span></a>
+            </div>
+            <button class="mobile-menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/bio.html">Bio</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/philosophy.html">Philosophy</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/donations.html">Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section section-white">
+            <div class="container">
+                <h1 class="serif section-title">Multimedia Gallery</h1>
+                <p class="text-center subtitle-page">Experience the visual and auditory nectar of Harinam Sankirtan.</p>
+
+                <div class="gallery-tabs">
+                    <button class="tab-link active" data-tab="photos">Photos</button>
+                    <button class="tab-link" data-tab="video">Video & Audio</button>
+                </div>
+
+                <div id="photos" class="tab-content active">
+                    <div class="photo-grid">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Srinathji Temple">
+                            <div class="gallery-caption">The Divine Presence</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Radha Krishna Puja">
+                            <div class="gallery-caption">Holy Offerings</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800" alt="Vrindavan Ghats">
+                            <div class="gallery-caption">Vrindavan Mornings</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e49528220343?auto=format&fit=crop&q=80&w=800" alt="Chanting Beads">
+                            <div class="gallery-caption">Japa Meditation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video" class="tab-content">
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <h4 class="serif">Live at Krishna Balaram Mandir</h4>
+                            <p class="mb-2">A soul-stirring evening kirtan capturing the essence of Vraja.</p>
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="audio-player-complex">
+                            <h4 class="serif">Transcendental Soundtracks</h4>
+                            <p>Download and meditate upon these carefully mixed studio recordings.</p>
+                            <div class="track-list">
+                                <div class="track">
+                                    <span>Evening Mood - Rag Yaman</span>
+                                    <p>Ideal for deep evening meditation and introspection.</p>
+                                    <audio controls>
+                                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="track">
+                                    <span>Ecstatic Vibrations - Fast 12/8 Beat</span>
+                                    <p>A high-energy kirtan inspired by the dancing of Lord Chaitanya.</p>
+                                    <audio controls>
+                                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decorative-divider">✦</div>
+                
+                <div class="container-narrow text-center mt-5">
+                    <h3 class="serif">Request a Recording</h3>
+                    <p>Are you looking for a specific raga or a recording from a particular festival? Reach out to our media team at media@kirtanpremi.com.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h4 class="serif">Kirtan Premi</h4>
+                    <p>Propagating the sound incarnation of God through the legacy of Gaudiya Vaishnavism.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="https://youtube.com" class="social-icon" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        <a href="https://facebook.com" class="social-icon" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="serif mb-4">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/bio.html">Biographies</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/philosophy.html">Philosophy</a></li>
+                        <li><a href="/gallery.html">Multimedia</a></li>
+                        <li><a href="/donations.html">Support Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="serif mb-4">Contact Seva</h4>
+                    <p>Vrindavan Ashram, Raman Reti<br>UP, India - 281121</p>
+                    <p class="mt-2">Email: seva@kirtanpremi.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kirtan Premi Prabhu. All Rights Reserved. Inspired by Srila Prabhupada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
