@@ -199,14 +199,14 @@ function loadStaticContent() {
     testimonialsList.innerHTML = `
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100&h=100" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
+          <img src="/assets/gallery/photos/kp2.jpeg" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Radhika Dasi</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"The kirtans led by Kirtan Premi Prabhu have a way of transporting you straight to Vrindavan. Truly soul-stirring."</p>
       </div>
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100&h=100" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
+          <img src="/assets/gallery/photos/kkmaharaj.jpeg" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Jagannath Das</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"A beautiful experience. The melody and the devotion behind every name chanted is palpable."</p>
@@ -255,7 +255,7 @@ function renderOverview() {
         <article class="gallery-overview-card">
           <div class="gallery-overview-card-copy">
             <span class="gallery-section-label">${category.title}</span>
-            <h2 class="serif">${category.title} Archives</h2>
+            <h2 class="serif">${category.title} Collection</h2>
             <p>${category.description}</p>
             <a href="${category.page}" class="btn btn-gold">${category.cta}</a>
           </div>
@@ -334,7 +334,6 @@ function renderAudioAlbum(album) {
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
           <div class="gallery-album-summary-footer">
-            <p class="gallery-asset-path">Folder: /assets/gallery/audio/${album.slug}/</p>
             <span class="gallery-album-toggle-indicator" aria-hidden="true">
               <span class="gallery-album-toggle-text">View album</span>
               <span class="gallery-album-toggle-icon">▾</span>
@@ -361,7 +360,6 @@ function renderAudioAlbum(album) {
                 <audio controls preload="none" class="gallery-audio-player">
                   <source src="${item.file}" type="audio/mpeg">
                 </audio>
-                <p class="gallery-asset-path">${item.file}</p>
               </div>
             `
           )
@@ -383,7 +381,6 @@ function renderVideoAlbum(album) {
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
           <div class="gallery-album-summary-footer">
-            <p class="gallery-asset-path">Folder: /assets/gallery/video/${album.slug}/</p>
             <span class="gallery-album-toggle-indicator" aria-hidden="true">
               <span class="gallery-album-toggle-text">View album</span>
               <span class="gallery-album-toggle-icon">▾</span>
@@ -407,7 +404,6 @@ function renderVideoAlbum(album) {
                 <div class="gallery-media-copy">
                   <h3 class="serif">${item.title}</h3>
                   <p>${item.notes || ''}</p>
-                  <p class="gallery-asset-path">${item.file}</p>
                 </div>
               </div>
             `
@@ -430,7 +426,6 @@ function renderPhotosAlbum(album) {
           <h2 class="serif">${album.title}</h2>
           <p>${album.description}</p>
           <div class="gallery-album-summary-footer">
-            <p class="gallery-asset-path">Folder: /assets/gallery/photos/${album.slug}/</p>
             <span class="gallery-album-toggle-indicator" aria-hidden="true">
               <span class="gallery-album-toggle-text">View album</span>
               <span class="gallery-album-toggle-icon">▾</span>
@@ -454,7 +449,6 @@ function renderPhotosAlbum(album) {
                 <figcaption class="gallery-media-copy">
                   <h3 class="serif">${item.title}</h3>
                   <p>${item.caption || ''}</p>
-                  <p class="gallery-asset-path">${item.file}</p>
                 </figcaption>
               </figure>
             `
@@ -523,6 +517,25 @@ function attachMediaFallbacks() {
   });
 }
 
+function hydrateFooterSocialIcons() {
+  const iconMap = {
+    Instagram: '/assets/gallery/photos/instagramsymbol.jpeg',
+    Facebook: '/assets/gallery/photos/facebookLogo.png',
+    YouTube: '/assets/gallery/photos/youtubelogo.png',
+  };
+
+  document.querySelectorAll('.social-icon').forEach((link) => {
+    const label = link.getAttribute('aria-label');
+    const asset = label ? iconMap[label] : null;
+
+    if (!asset) {
+      return;
+    }
+
+    link.innerHTML = `<img src="${asset}" alt="${label}" class="social-icon-image">`;
+  });
+}
+
 // --- E-Commerce Store Logic ---
 function initStore() {
     // Initial products if local storage is empty
@@ -531,26 +544,35 @@ function initStore() {
             id: '1',
             name: 'Premium Clay Mridanga',
             price: 250.00,
-            image: 'https://images.unsplash.com/photo-1512411221764-1da648174780?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/gallery/photos/premiumClayMridanga.jpeg',
             description: 'Authentic clay mridanga from Mayapur, professional quality with excellent tuning.'
         },
         {
             id: '2',
             name: 'Vrindavan Tulasi Japa Mala',
             price: 25.00,
-            image: 'https://images.unsplash.com/photo-1531746020798-e49528220343?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/gallery/photos/tulsiJapaMala.jpeg',
             description: 'Hand-carved Tulasi beads crafted by Vrajavasis in Vrindavan.'
         },
         {
             id: '3',
             name: 'Standard Brass Kartals',
             price: 45.00,
-            image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/gallery/photos/kartals.jpeg',
             description: 'Heavy resonant bell-metal kartals for long kirtan sessions.'
         }
     ];
 
-    if (!localStorage.getItem('kirtanStoreProducts')) {
+    const savedProducts = JSON.parse(localStorage.getItem('kirtanStoreProducts') || '[]');
+    const shouldRefreshDefaults =
+        savedProducts.length === 0 ||
+        savedProducts.some((product) =>
+            ['kp3.jpeg', 'vrindavan.jpeg', 'kp4.jpeg', 'unsplash.com'].some((token) =>
+                String(product.image || '').includes(token)
+            )
+        );
+
+    if (shouldRefreshDefaults) {
         localStorage.setItem('kirtanStoreProducts', JSON.stringify(defaultProducts));
     }
 }
@@ -640,5 +662,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStore();
   renderOverview();
   renderCategoryPage();
+  hydrateFooterSocialIcons();
   attachMediaFallbacks();
 });

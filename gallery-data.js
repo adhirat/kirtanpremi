@@ -13,7 +13,7 @@ export const galleryCategories = [
         description:
           'Some recordings from kirtan festivals',
         coverImage:
-          '/assets/gallery/audio/vrindavan-midnight-kirtan/cover.jpg',
+          '/assets/gallery/photos/kp2.jpeg',
         items: [
           {
             title: 'Mangala Invocation',
@@ -44,7 +44,7 @@ export const galleryCategories = [
         description:
           'Recordings from the sri vrindavan dham 24 hour kirtan mandali ',
         coverImage:
-          '/assets/gallery/audio/vrindavan-midnight-kirtan/cover.jpg',
+          '/assets/gallery/photos/vrindavan.jpeg',
         items: [
           {
             title: 'Mangala Invocation',
@@ -74,7 +74,7 @@ export const galleryCategories = [
         slug: 'Sankirtan',
         description:
           'Some kirtans of The pillars of Srila Prabhupads movement',
-        coverImage: '/assets/gallery/audio/aindra-smarana-sessions/cover.jpg',
+        coverImage: '/assets/gallery/photos/kkmaharaj.jpeg',
         items: [
           {
             title: 'Nama Before Dawn',
@@ -104,7 +104,7 @@ export const galleryCategories = [
         slug: 'Vaishav bhajans',
         description:
           'Heartful prayers from our acharyas',
-        coverImage: '/assets/gallery/audio/aindra-smarana-sessions/cover.jpg',
+        coverImage: '/assets/gallery/photos/prabhupad1.jpeg',
         items: [
           {
             title: 'Nama Before Dawn',
@@ -145,13 +145,13 @@ export const galleryCategories = [
         description:
           'Temple hall recordings centered on attentive lead singing, responsive chorus lines, and the atmosphere of service.',
         coverImage:
-          '/assets/gallery/video/seva-at-krsna-balaram-mandir/cover.jpg',
+          '/assets/gallery/photos/aindra1.jpeg',
         items: [
           {
             title: 'Morning Temple Offering',
             file: '/assets/gallery/video/seva-at-krsna-balaram-mandir/morning-temple-offering.mp4',
             poster:
-              '/assets/gallery/video/seva-at-krsna-balaram-mandir/morning-temple-offering.jpg',
+              '/assets/gallery/photos/aindra1.jpeg',
             notes:
               'Recorded from the front of the hall during a serene pre-class kirtan.',
           },
@@ -159,24 +159,24 @@ export const galleryCategories = [
             title: 'Evening Response Waves',
             file: '/assets/gallery/video/seva-at-krsna-balaram-mandir/evening-response-waves.mp4',
             poster:
-              '/assets/gallery/video/seva-at-krsna-balaram-mandir/evening-response-waves.jpg',
+              '/assets/gallery/photos/aindra2.jpeg',
             notes:
               'Focused on the rise and release of the response lines as the pace increases.',
           },
         ],
       },
       {
-        title: 'Parikrama Nama Procession',
+        title: 'Outdoor Kirtans',
         slug: 'parikrama-nama-procession',
         description:
           'Outdoor footage following the movement of kirtan through parikrama routes and festival crowds.',
-        coverImage: '/assets/gallery/video/parikrama-nama-procession/cover.jpg',
+        coverImage: '/assets/gallery/photos/vrindavan.jpeg',
         items: [
           {
             title: 'Dust of Vraja Procession',
             file: '/assets/gallery/video/parikrama-nama-procession/dust-of-vraja-procession.mp4',
             poster:
-              '/assets/gallery/video/parikrama-nama-procession/dust-of-vraja-procession.jpg',
+              '/assets/gallery/photos/vrindavan.jpeg',
             notes:
               'A moving street kirtan with layered mridanga and open-air chorus response.',
           },
@@ -184,7 +184,7 @@ export const galleryCategories = [
             title: 'Festival Courtyard Arrival',
             file: '/assets/gallery/video/parikrama-nama-procession/festival-courtyard-arrival.mp4',
             poster:
-              '/assets/gallery/video/parikrama-nama-procession/festival-courtyard-arrival.jpg',
+              '/assets/gallery/photos/kp4.jpeg',
             notes:
               'Captures the transition from walking kirtan into a fixed courtyard gathering.',
           },
@@ -201,64 +201,64 @@ export const galleryCategories = [
     cta: 'View the photo albums',
     albums: [
       {
-        title: 'Kartal and Candlelight Evenings',
+        title: 'Temple Kirtan Darshan',
         slug: 'kartal-and-candlelight-evenings',
         description:
-          'Low-light temple images evoking late-night chanting, simple offerings, and concentrated bhajana.',
+          'A closer look at Aindra Prabhu, temple darshan, and the devotional spaces that shaped the kirtan mood.',
         coverImage:
-          '/assets/gallery/photos/kartal-and-candlelight-evenings/cover.jpg',
+          '/assets/gallery/photos/aindraPrDieties.jpeg',
         items: [
           {
-            title: 'Lamp-lit Harmonium',
-            file: '/assets/gallery/photos/kartal-and-candlelight-evenings/lamp-lit-harmonium.jpg',
+            title: 'Aindra Prabhu and the Deities',
+            file: '/assets/gallery/photos/aindraPrDieties.jpeg',
             caption:
-              'A quiet corner prepared for kirtan before the evening gathering begins.',
+              'A sacred glimpse of kirtan seva offered before the Lordships in Vrindavan.',
           },
           {
-            title: 'Hands on Kartals',
-            file: '/assets/gallery/photos/kartal-and-candlelight-evenings/hands-on-kartals.jpg',
+            title: 'Aindra Prabhu\'s Kirtan Room',
+            file: '/assets/gallery/photos/aindraRoomWalls.jpeg',
             caption:
-              'Close study of rhythm keeping and the intimacy of congregational response.',
+              'The walls and atmosphere of a room steeped in remembrance, prayer, and continuous chanting.',
           },
           {
-            title: 'Temple Hall After Arati',
-            file: '/assets/gallery/photos/kartal-and-candlelight-evenings/temple-hall-after-arati.jpg',
+            title: 'Aindra Prabhu in Kirtan',
+            file: '/assets/gallery/photos/aindra1.jpeg',
             caption:
-              'The softened light and stillness that linger after the last refrain.',
+              'A moment of absorbed kirtan carrying the intensity and sweetness of the holy name.',
           },
         ],
       },
       {
-        title: 'Vrindavan Kirtan Parikrama',
+        title: 'Vrindavan Memories',
         slug: 'vrindavan-kirtan-parikrama',
         description:
-          'Travel photographs shaped around walking kirtan, sacred routes, and shared devotional energy.',
+          'Scenes from Vraja that hold the quiet beauty, open spaces, and movement of pilgrimage and kirtan.',
         coverImage:
-          '/assets/gallery/photos/vrindavan-kirtan-parikrama/cover.jpg',
+          '/assets/gallery/photos/vrindavanLakes.jpeg',
         items: [
           {
-            title: 'Morning Street Nama',
-            file: '/assets/gallery/photos/vrindavan-kirtan-parikrama/morning-street-nama.jpg',
+            title: 'Vrindavan Lakes',
+            file: '/assets/gallery/photos/vrindavanLakes.jpeg',
             caption:
-              'The first steps of the day, when chanting and footsteps begin together.',
+              'A peaceful Vraja landscape that reflects the stillness and sweetness of the dham.',
           },
           {
-            title: 'Mridanga Rest Between Stops',
-            file: '/assets/gallery/photos/vrindavan-kirtan-parikrama/mridanga-rest-between-stops.jpg',
+            title: 'Parikrama Through Vraja',
+            file: '/assets/gallery/photos/vrindavan.jpeg',
             caption:
-              'An instrument pause that still carries the momentum of the previous song.',
+              'A sacred route where chanting, walking, and remembrance move together.',
           },
           {
-            title: 'Courtyard Gathering',
-            file: '/assets/gallery/photos/vrindavan-kirtan-parikrama/courtyard-gathering.jpg',
+            title: 'Kirtan Premi in Seva',
+            file: '/assets/gallery/photos/kp1.jpeg',
             caption:
-              'A congregation assembled in a shared circle of song and remembrance.',
+              'A portrait from the ongoing effort to share kirtan in the mood of service and surrender.',
           },
           {
-            title: 'Dust and Tilaka',
-            file: '/assets/gallery/photos/vrindavan-kirtan-parikrama/dust-and-tilaka.jpg',
+            title: 'Festival Kirtan Gathering',
+            file: '/assets/gallery/photos/kp4.jpeg',
             caption:
-              'A portrait detail reflecting the simplicity and joy of parikrama service.',
+              'A congregational moment filled with rhythm, response, and shared devotion.',
           },
         ],
       },

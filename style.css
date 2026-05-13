@@ -62,6 +62,8 @@ h1, h2, h3, h4 {
 
 .container-narrow {
   max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -306,14 +308,21 @@ h1, h2, h3, h4 {
 /* Hero */
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1542332213-31f87348057f?auto=format&fit=crop&q=80&w=1600');
+  background:
+    linear-gradient(rgba(21, 12, 8, 0.42), rgba(21, 12, 8, 0.42)),
+    url('/assets/gallery/photos/vrindavanHD.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center 62%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--white);
+}
+
+.hero-content {
+  max-width: 760px;
+  padding: 0 1.5rem;
 }
 
 .hero h1 {
@@ -504,6 +513,18 @@ h1, h2, h3, h4 {
   gap: 1rem;
 }
 
+.gallery-overview-card-preview .gallery-cover-image,
+.gallery-overview-card-preview .gallery-media-fallback,
+.featured-album-cover .gallery-cover-image,
+.featured-album-cover .gallery-media-fallback,
+.gallery-album-cover .gallery-cover-image,
+.gallery-album-cover .gallery-media-fallback,
+.gallery-photo-image,
+.gallery-photo-card .gallery-media-fallback {
+  border: 4px solid rgba(44, 24, 16, 0.86);
+  border-radius: 18px;
+}
+
 .gallery-overview-meta {
   display: grid;
   gap: 0.25rem;
@@ -594,7 +615,7 @@ h1, h2, h3, h4 {
 
 .gallery-album-summary-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 1rem;
   margin-top: 1rem;
@@ -921,8 +942,12 @@ h1, h2, h3, h4 {
 }
 
 .verse-box {
-  background-color: rgba(204, 85, 0, 0.05);
+  background:
+    linear-gradient(155deg, rgba(253, 245, 230, 0.96), rgba(255, 255, 255, 1));
+  border: 1px solid rgba(212, 175, 55, 0.18);
   border-left: 4px solid var(--saffron);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(44, 24, 16, 0.08);
   padding: 2.5rem;
   margin: 3rem 0;
   font-style: italic;
@@ -947,10 +972,13 @@ h1, h2, h3, h4 {
 
 .footer-nav {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 1.5rem;
 }
 
 .footer-nav li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 
 .footer-nav a {
@@ -988,6 +1016,13 @@ h1, h2, h3, h4 {
   fill: none;
 }
 
+.social-icon-image {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
 .social-icon:hover {
   background: var(--saffron);
   transform: scale(1.1);
@@ -995,19 +1030,36 @@ h1, h2, h3, h4 {
 
 /* Philosophy Detailed */
 .philosophy-detailed {
-  max-width: 700px;
-  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .philosophy-card-plain {
-  margin-top: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 2rem;
+  margin-top: 0;
+  background:
+    linear-gradient(155deg, rgba(253, 245, 230, 0.96), rgba(255, 255, 255, 1));
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(44, 24, 16, 0.08);
 }
 
 .philosophy-card-plain h3 {
-  color: var(--gold);
+  color: var(--saffron);
   margin-bottom: 1rem;
+}
+
+.philosophy-hero {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.philosophy-hero .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-hero .subtitle-page {
+  margin-bottom: 0;
 }
 
 /* Gallery Complex */
@@ -1089,7 +1141,20 @@ h1, h2, h3, h4 {
 .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
 .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
 .text-sm { font-size: 0.875rem; }
+.mt-2 { margin-top: 0.75rem; }
 .mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 2.5rem; }
+
+.donation-text {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donation-actions {
+  margin-top: 2rem;
+}
 
 /* Store Grid */
 .store-grid {
@@ -1112,6 +1177,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  object-position: center;
 }
 
 .product-details {
@@ -1198,6 +1264,10 @@ h1, h2, h3, h4 {
   .gallery-track-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
   }
 
   .gallery-media-fallback,
