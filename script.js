@@ -90,17 +90,87 @@ function loadStaticContent() {
     if (testimonialsList) {
         testimonialsList.innerHTML = `
             <div class="testimonial-card">
-                <p class="testimonial-quote">"The kirtans led by Kirtan Premi Prabhu have a way of transporting you straight to Vrindavan. Truly soul-stirring."</p>
-                <div class="testimonial-author">— Radhika Dasi</div>
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100&h=100" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
+                    <div class="testimonial-author font-serif font-semibold text-lg">— Radhika Dasi</div>
+                </div>
+                <p class="testimonial-quote italic text-gray-700">"The kirtans led by Kirtan Premi Prabhu have a way of transporting you straight to Vrindavan. Truly soul-stirring."</p>
             </div>
             <div class="testimonial-card">
-                <p class="testimonial-quote">"A beautiful experience. The melody and the devotion behind every name chanted is palpable."</p>
-                <div class="testimonial-author">— Jagannath Das</div>
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100&h=100" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
+                    <div class="testimonial-author font-serif font-semibold text-lg">— Jagannath Das</div>
+                </div>
+                <p class="testimonial-quote italic text-gray-700">"A beautiful experience. The melody and the devotion behind every name chanted is palpable."</p>
             </div>
         `;
     }
 }
 
+// --- E-Commerce Store Logic ---
+function initStore() {
+    // Initial products if local storage is empty
+    const defaultProducts = [
+        {
+            id: '1',
+            name: 'Premium Clay Mridanga',
+            price: 250.00,
+            image: 'https://images.unsplash.com/photo-1512411221764-1da648174780?auto=format&fit=crop&q=80&w=800',
+            description: 'Authentic clay mridanga from Mayapur, professional quality with excellent tuning.'
+        },
+        {
+            id: '2',
+            name: 'Vrindavan Tulasi Japa Mala',
+            price: 25.00,
+            image: 'https://images.unsplash.com/photo-1531746020798-e49528220343?auto=format&fit=crop&q=80&w=800',
+            description: 'Hand-carved Tulasi beads crafted by Vrajavasis in Vrindavan.'
+        },
+        {
+            id: '3',
+            name: 'Standard Brass Kartals',
+            price: 45.00,
+            image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800',
+            description: 'Heavy resonant bell-metal kartals for long kirtan sessions.'
+        }
+    ];
+
+    if (!localStorage.getItem('kirtanStoreProducts')) {
+        localStorage.setItem('kirtanStoreProducts', JSON.stringify(defaultProducts));
+    }
+}
+
+function getProducts() {
+    return JSON.parse(localStorage.getItem('kirtanStoreProducts') || '[]');
+}
+
+function saveProducts(products) {
+    localStorage.setItem('kirtanStoreProducts', JSON.stringify(products));
+}
+
+function renderStore() {
+    const productList = document.getElementById('product-list');
+    if (!productList) return;
+
+    const products = getProducts();
+    if (products.length === 0) {
+        productList.innerHTML = '<p class="text-center w-full col-span-full">No products available at the moment.</p>';
+        return;
+    }
+
+    productList.innerHTML = products.map(p => `
+        <div class="product-card">
+            <img src="${p.image}" alt="${p.name}" class="product-image">
+            <div class="product-details">
+                <h3 class="serif">${p.name}</h3>
+                <p class="product-price">$${Number(p.price).toFixed(2)}</p>
+                <p class="product-desc">${p.description}</p>
+                <button class="btn btn-gold w-full mt-3" onclick="alert('Added to Cart!')">Add to Cart</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Attach to window so onclick works globally
 // --- Active Link Highlighter ---
 function highlightActiveLink() {
     const currentPath = window.location.pathname;
@@ -123,4 +193,6 @@ function highlightActiveLink() {
 document.addEventListener('DOMContentLoaded', () => {
     highlightActiveLink();
     loadStaticContent();
+    initStore();
+    renderStore();
 });

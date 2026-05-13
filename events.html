@@ -14,8 +14,11 @@
         <nav class="nav-container">
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <span class="logo-text">Kirtan Premi</span>
-                    <span class="logo-tagline">Vibrating The Holy Names</span>
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=100&h=100" alt="Avatar" class="header-avatar">
+                    <div class="logo-text-group">
+                        <span class="logo-text">Kirtan Premi</span>
+                        <span class="logo-tagline">Vibrating The Holy Names</span>
+                    </div>
                 </a>
             </div>
             <button class="mobile-menu-toggle" id="menuToggle">
@@ -24,12 +27,20 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/bio.html">Bio</a></li>
+                <li><a href="/">Bio</a></li>
                 <li><a href="/events.html">Events</a></li>
                 <li><a href="/philosophy.html">Philosophy</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/donations.html">Donations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Gallery <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/image.html">Images</a>
+                        <a href="/audio.html">Audio</a>
+                        <a href="/video.html">Video</a>
+                        <a href="/store.html">Products</a>
+                    </div>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donations.html" class="btn btn-gold" style="padding: 0.4rem 1.2rem; color: #fff;">SUPPORT</a></li>
             </ul>
         </nav>
     </header>
@@ -72,12 +83,14 @@
                 <div>
                     <h4 class="serif mb-4">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/bio.html">Biographies</a></li>
+                        <li><a href="/">Bio</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/philosophy.html">Philosophy</a></li>
-                        <li><a href="/gallery.html">Multimedia</a></li>
-                        <li><a href="/donations.html">Support Us</a></li>
+                        <li><a href="/image.html">Image Gallery</a></li>
+                        <li><a href="/video.html">Video Gallery</a></li>
+                        <li><a href="/audio.html">Audio Gallery</a></li>
+                        <li><a href="/donations.html">Support</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div>

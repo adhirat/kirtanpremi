@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Kirtan Premi Prabhu</title>
+    <title>Audio Gallery | Kirtan Premi Prabhu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,7 +13,13 @@
     <header class="sticky-header">
         <nav class="nav-container">
             <div class="logo">
-                <a href="/" class="logo-link"><span class="logo-text">Kirtan Premi</span></a>
+                <a href="/" class="logo-link">
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=100&h=100" alt="Avatar" class="header-avatar">
+                    <div class="logo-text-group">
+                        <span class="logo-text">Kirtan Premi</span>
+                        <span class="logo-tagline">Vibrating The Holy Names</span>
+                    </div>
+                </a>
             </div>
             <button class="mobile-menu-toggle" id="menuToggle">
                 <span class="bar"></span>
@@ -21,12 +27,20 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/bio.html">Bio</a></li>
+                <li><a href="/">Bio</a></li>
                 <li><a href="/events.html">Events</a></li>
                 <li><a href="/philosophy.html">Philosophy</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/donations.html">Donations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Gallery <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/image.html">Images</a>
+                        <a href="/audio.html">Audio</a>
+                        <a href="/video.html">Video</a>
+                        <a href="/store.html">Products</a>
+                    </div>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donations.html" class="btn btn-gold" style="padding: 0.4rem 1.2rem; color: #fff;">SUPPORT</a></li>
             </ul>
         </nav>
     </header>
@@ -34,43 +48,13 @@
     <main>
         <section class="section section-white">
             <div class="container">
-                <h1 class="serif section-title">Multimedia Gallery</h1>
-                <p class="text-center subtitle-page">Experience the visual and auditory nectar of Harinam Sankirtan.</p>
+                <h1 class="serif section-title">Audio Gallery</h1>
+                <p class="text-center subtitle-page">Experience the auditory nectar of Harinam Sankirtan.</p>
 
-                <div class="gallery-tabs">
-                    <button class="tab-link active" data-tab="photos">Photos</button>
-                    <button class="tab-link" data-tab="video">Video & Audio</button>
-                </div>
-
-                <div id="photos" class="tab-content active">
-                    <div class="photo-grid">
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Srinathji Temple">
-                            <div class="gallery-caption">The Divine Presence</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Radha Krishna Puja">
-                            <div class="gallery-caption">Holy Offerings</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800" alt="Vrindavan Ghats">
-                            <div class="gallery-caption">Vrindavan Mornings</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1531746020798-e49528220343?auto=format&fit=crop&q=80&w=800" alt="Chanting Beads">
-                            <div class="gallery-caption">Japa Meditation</div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div id="video" class="tab-content">
-                    <div class="video-grid">
-                        <div class="video-item">
-                            <h4 class="serif">Live at Krishna Balaram Mandir</h4>
-                            <p class="mb-2">A soul-stirring evening kirtan capturing the essence of Vraja.</p>
-                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="audio-player-complex">
+                    <div class="audio-player-complex" style="width: 100%; max-width: 800px; margin: 0 auto;">
                             <h4 class="serif">Transcendental Soundtracks</h4>
                             <p>Download and meditate upon these carefully mixed studio recordings.</p>
                             <div class="track-list">
@@ -118,12 +102,14 @@
                 <div>
                     <h4 class="serif mb-4">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/bio.html">Biographies</a></li>
+                        <li><a href="/">Bio</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/philosophy.html">Philosophy</a></li>
-                        <li><a href="/gallery.html">Multimedia</a></li>
-                        <li><a href="/donations.html">Support Us</a></li>
+                        <li><a href="/image.html">Image Gallery</a></li>
+                        <li><a href="/video.html">Video Gallery</a></li>
+                        <li><a href="/audio.html">Audio Gallery</a></li>
+                        <li><a href="/donations.html">Support</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div>

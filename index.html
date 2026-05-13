@@ -16,8 +16,11 @@
         <nav class="nav-container">
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <span class="logo-text">Kirtan Premi</span>
-                    <span class="logo-tagline">Vibrating The Holy Names</span>
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=100&h=100" alt="Avatar" class="header-avatar">
+                    <div class="logo-text-group">
+                        <span class="logo-text">Kirtan Premi</span>
+                        <span class="logo-tagline">Vibrating The Holy Names</span>
+                    </div>
                 </a>
             </div>
             <button class="mobile-menu-toggle" id="menuToggle">
@@ -26,12 +29,20 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/bio.html">Bio</a></li>
+                <li><a href="/">Bio</a></li>
                 <li><a href="/events.html">Events</a></li>
                 <li><a href="/philosophy.html">Philosophy</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/donations.html">Donations</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Gallery <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/image.html">Images</a>
+                        <a href="/audio.html">Audio</a>
+                        <a href="/video.html">Video</a>
+                        <a href="/store.html">Products</a>
+                    </div>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/donations.html" class="btn btn-gold" style="padding: 0.4rem 1.2rem; color: #fff;">SUPPORT</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +53,7 @@
             <div class="hero-content">
                 <h1 class="serif animate-fade-in">The nectar of Holy Names</h1>
                 <p class="subtitle animate-fade-up">Experience the spiritual depth of Harinam Sankirtan with Kirtan Premi Prabhu.</p>
-                <a href="/bio.html" class="btn btn-gold">Explore the Journey</a>
+                <a href="#bio" class="btn btn-gold">Explore the Journey</a>
             </div>
         </section>
 
@@ -57,8 +68,62 @@
             </div>
         </section>
 
+        <!-- Spiritual Lineage & Biographies -->
+        <section id="bio" class="section section-white">
+            <div class="container">
+                <h2 class="serif section-title text-center">Spiritual Lineage & Biographies</h2>
+                <p class="text-center subtitle-page mb-5">Honoring the masters who paved the way for the global Sankirtan revolution.</p>
+                
+                <div class="bio-grid">
+                    <!-- Kirtan Premi Prabhu -->
+                    <div class="bio-card">
+                        <div class="bio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=800" alt="Kirtan Premi Prabhu" class="bio-img">
+                        </div>
+                        <div class="bio-details">
+                            <h3 class="serif">Kirtan Premi Prabhu</h3>
+                            <p class="lead-text">"Kirtan is the breath of the soul."</p>
+                            <p>A dedicated servant of the Holy Name, Kirtan Premi Prabhu has spent decades travelling and sharing the bliss of Mahaprabhu's mission. His kirtans are known for their deep meditative quality and soul-stirring melodies.</p>
+                            <p>Having served extensively in the Vrindavan 24-hour kirtan team, he imbibed the "Aindra-style" of kirtan—characterized by its intensity, rhythmic complexity, and unwavering focus on the pleasure of Radha-Shyamasundara. His mission is to bring this same Vrindavan spirit to Every Town and Village.</p>
+                        </div>
+                    </div>
+
+                    <!-- Aindra Prabhu -->
+                    <div class="bio-card">
+                        <div class="bio-img-wrapper">
+                            <img src="https://vanimedia.org/w/images/0/0e/Aindra_Prabhu.jpg" alt="Aindra Prabhu" class="bio-img">
+                        </div>
+                        <div class="bio-details">
+                            <h3 class="serif">Aindra Prabhu</h3>
+                            <p>The visionary pioneer of the 24-hour Kirtan at Krishna Balaram Mandir, Vrindavan. For over 24 years, Aindra Prabhu personally led the kirtan team, rarely leaving the holy dhama. He transformed the landscape of modern kirtan by re-introducing classical ragas and a deep sense of 'bhava'.</p>
+                            <p>His legacy is not just in the recordings he left behind, but in the thousands of "Aindra-generation" kirtaniyas who now carry the flame of the Mahamantra with artistic excellence and spiritual fervor.</p>
+                        </div>
+                    </div>
+
+                    <!-- Srila Prabhupada -->
+                    <div class="bio-card">
+                        <div class="bio-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/A_C_Bhaktivedanta_Swami_Prabhupada.jpg" alt="Srila Prabhupada" class="bio-img">
+                        </div>
+                        <div class="bio-details">
+                            <h3 class="serif">Srila Prabhupada</h3>
+                            <p>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (1896-1977). At the age of 69, he traveled alone to New York with only a few dollars and a trunk of translations. Within 12 years, he established over 100 temples and initiated thousands into the chanting of Hare Krishna.</p>
+                            <p>He is the "Senapati Bhakta" (Commander-in-Chief) foretold by Lord Chaitanya, who would spread the Holy Name in every corner of the globe. Every mridanga beat heard today in the West is a testament to his miraculous compassion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decorative-divider">✦ ✦ ✦</div>
+                
+                <div class="container-narrow text-center mt-5">
+                    <h3 class="serif">The Guru-Shishya Parampara</h3>
+                    <p>Knowledge is like a river; it must flow from the source through an unbroken chain of authorized teachers. We belong to the Brahma-Madhva-Gaudiya Sampradaya, ensuring that the message of the Srimad Bhagavatam remains pure and undiluted.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Upcoming Events -->
-        <section class="section section-white">
+        <section class="section section-cream">
             <div class="container">
                 <h2 class="serif section-title">Upcoming Kirtan Events</h2>
                 <div id="events-list" class="events-container">
@@ -107,12 +172,14 @@
                 <div>
                     <h4 class="serif mb-4">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/bio.html">Biographies</a></li>
+                        <li><a href="/">Bio</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/philosophy.html">Philosophy</a></li>
-                        <li><a href="/gallery.html">Multimedia</a></li>
-                        <li><a href="/donations.html">Support Us</a></li>
+                        <li><a href="/image.html">Image Gallery</a></li>
+                        <li><a href="/video.html">Video Gallery</a></li>
+                        <li><a href="/audio.html">Audio Gallery</a></li>
+                        <li><a href="/donations.html">Support</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div>
