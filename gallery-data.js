@@ -4,7 +4,7 @@ export const galleryCategories = [
     title: 'Audio',
     description:
       'Meditative recordings arranged for attentive chanting, deep listening, and remembrance of Vrindavan kirtan moods.',
-    page: '/gallery-audio.html',
+    page: '/audio.html',
     cta: 'Hear the kirtan collection',
     albums: [
        {
@@ -136,7 +136,7 @@ export const galleryCategories = [
     title: 'Video',
     description:
       'Locally archived visual Videos for festival memories, temple programs, and kirtans.',
-    page: '/gallery-video.html',
+    page: '/video.html',
     cta: 'Watch the kirtan footage',
     albums: [
       {
@@ -197,7 +197,7 @@ export const galleryCategories = [
     title: 'Photos',
     description:
       'Album-based still galleries for darshan, travel moments, instruments, and congregational memories.',
-    page: '/gallery-photos.html',
+    page: '/image.html',
     cta: 'View the photo albums',
     albums: [
       {
