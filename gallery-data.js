@@ -5,13 +5,13 @@ export const galleryCategories = [
     description:
       'Meditative recordings arranged for attentive chanting, deep listening, and remembrance of Vrindavan kirtan moods.',
     page: '/gallery-audio.html',
-    cta: 'Hear the bhajana collection',
+    cta: 'Hear the kirtan collection',
     albums: [
-      {
-        title: 'Vrindavan Midnight Kirtan',
+       {
+        title: 'Kirtan Festivals',
         slug: 'vrindavan-midnight-kirtan',
         description:
-          'A slower, contemplative album inspired by the late-night temple atmosphere and the steady current of maha-mantra.',
+          'Some recordings from kirtan festivals',
         coverImage:
           '/assets/gallery/audio/vrindavan-midnight-kirtan/cover.jpg',
         items: [
@@ -39,7 +39,38 @@ export const galleryCategories = [
         ],
       },
       {
-        title: 'Maharaj',
+        title: 'Vrindavan 24 hour Kirtan',
+        slug: 'vrindavan-midnight-kirtan',
+        description:
+          'Recordings from the sri vrindavan dham 24 hour kirtan mandali ',
+        coverImage:
+          '/assets/gallery/audio/vrindavan-midnight-kirtan/cover.jpg',
+        items: [
+          {
+            title: 'Mangala Invocation',
+            file: '/assets/gallery/audio/vrindavan-midnight-kirtan/01-mangala-invocation.mp3',
+            duration: '7:12',
+            notes:
+              'A gentle opening meant to settle the heart before the response kirtan begins.',
+          },
+          {
+            title: 'Yamuna Breeze Maha-mantra',
+            file: '/assets/gallery/audio/vrindavan-midnight-kirtan/02-yamuna-breeze-maha-mantra.mp3',
+            duration: '12:48',
+            notes:
+              'Layered harmonium and kartals with a patient build in the refrain.',
+          },
+          {
+            title: 'Moonlit Japa Meditation',
+            file: '/assets/gallery/audio/vrindavan-midnight-kirtan/03-moonlit-japa-meditation.mp3',
+            duration: '9:31',
+            notes:
+              'A soft concluding track suited for personal prayer or temple room reflection.',
+          },
+        ],
+      },
+      {
+        title: 'Maharajs Kirtans',
         slug: 'Sankirtan',
         description:
           'Some kirtans of The pillars of Srila Prabhupads movement',
@@ -68,6 +99,36 @@ export const galleryCategories = [
           },
         ],
       },
+      {
+        title: 'Vaishnava Bhajans',
+        slug: 'Vaishav bhajans',
+        description:
+          'Heartful prayers from our acharyas',
+        coverImage: '/assets/gallery/audio/aindra-smarana-sessions/cover.jpg',
+        items: [
+          {
+            title: 'Nama Before Dawn',
+            file: '/assets/gallery/audio/aindra-smarana-sessions/01-nama-before-dawn.mp3',
+            duration: '10:06',
+            notes:
+              'Begins spaciously, then rises into a more insistent congregational pulse.',
+          },
+          {
+            title: 'Kartal River',
+            file: '/assets/gallery/audio/aindra-smarana-sessions/02-kartal-river.mp3',
+            duration: '8:44',
+            notes:
+              'A bright mid-tempo piece carried by crisp kartal accents and repeating melodic turns.',
+          },
+          {
+            title: 'Temple Courtyard Finale',
+            file: '/assets/gallery/audio/aindra-smarana-sessions/03-temple-courtyard-finale.mp3',
+            duration: '14:10',
+            notes:
+              'A closing surge meant for festival gatherings and extended response lines.',
+          },
+        ],
+      }
     ],
   },
   {

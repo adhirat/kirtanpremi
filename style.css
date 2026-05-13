@@ -435,6 +435,16 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+.gallery-overview-card-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.gallery-overview-card-copy .btn {
+  margin-top: 0.35rem;
+  justify-self: start;
+}
+
 .gallery-overview-card-copy h2,
 .gallery-featured-header h2,
 .featured-album-copy h3,
