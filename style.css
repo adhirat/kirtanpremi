@@ -253,6 +253,15 @@ h1, h2, h3, h4 {
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
 }
 
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1rem;
+  height: 1rem;
+}
+
 .nav-dropdown-menu a {
   display: block;
   padding: 0.75rem 0.95rem;
