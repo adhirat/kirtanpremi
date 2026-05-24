@@ -1388,6 +1388,12 @@ h1, h2, h3, h4 {
     text-align: center;
   }
 
+  .nav-dropdown-menu a {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
   .nav-item-dropdown.open .nav-dropdown-menu,
   .nav-item-dropdown:hover .nav-dropdown-menu,
   .nav-item-dropdown:focus-within .nav-dropdown-menu {
