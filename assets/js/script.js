@@ -199,14 +199,14 @@ function loadStaticContent() {
     testimonialsList.innerHTML = `
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="/assets/images/kp2.jpeg" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
+          <img src="./assets/images/kp2.jpeg" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Radhika Dasi</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"The kirtans led by Kirtan Premi Prabhu have a way of transporting you straight to Vrindavan. Truly soul-stirring."</p>
       </div>
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="/assets/images/kkmaharaj.jpeg" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
+          <img src="./assets/images/kkmaharaj.jpeg" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Jagannath Das</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"A beautiful experience. The melody and the devotion behind every name chanted is palpable."</p>
