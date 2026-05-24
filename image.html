@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="theme-wrapper">
     <header class="sticky-header">
         <nav class="nav-container">
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=100&h=100" alt="Avatar" class="header-avatar">
+                    <img src="/assets/gallery/photos/kp1.jpeg" alt="Kirtan Premi portrait" class="header-avatar">
                     <div class="logo-text-group">
                         <span class="logo-text">Kirtan Premi</span>
-                        <span class="logo-tagline">Vibrating The Holy Names</span>
+                        <span class="logo-tagline">Param Vijayate Sri Krishna Sankirtanam</span>
                     </div>
                 </a>
             </div>
@@ -27,59 +28,32 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Bio</a></li>
-                <li><a href="/events.html">Events</a></li>
-                <li><a href="/philosophy.html">Philosophy</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Gallery <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></a>
-                    <div class="dropdown-content">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/bio.html">Bio</a></li>
+                <li class="nav-item"><a href="/events.html">Events</a></li>
+                <li class="nav-item"><a href="/philosophy.html">Philosophy</a></li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="/gallery.html" class="nav-parent-link">Gallery</a>
+                    <button class="nav-dropdown-toggle" type="button" aria-label="Toggle gallery menu" aria-expanded="false" aria-controls="gallerySubmenu">
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="nav-dropdown-menu" id="gallerySubmenu">
                         <a href="/image.html">Images</a>
                         <a href="/audio.html">Audio</a>
                         <a href="/video.html">Video</a>
                         <a href="/store.html">Products</a>
                     </div>
                 </li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/donations.html" class="btn btn-gold" style="padding: 0.4rem 1.2rem; color: #fff;">SUPPORT</a></li>
+                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                <li class="nav-item"><a href="/donations.html" class="btn btn-gold nav-support-link">Support</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="section section-white">
+        <section class="section section-cream">
             <div class="container">
-                <h1 class="serif section-title">Image Gallery</h1>
-                <p class="text-center subtitle-page">Experience the visual nectar of Harinam Sankirtan.</p>
-
-                
-
-                <div id="photos" class="tab-content active">
-                    <div class="photo-grid">
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Srinathji Temple">
-                            <div class="gallery-caption">The Divine Presence</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Radha Krishna Puja">
-                            <div class="gallery-caption">Holy Offerings</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800" alt="Vrindavan Ghats">
-                            <div class="gallery-caption">Vrindavan Mornings</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1531746020798-e49528220343?auto=format&fit=crop&q=80&w=800" alt="Chanting Beads">
-                            <div class="gallery-caption">Japa Meditation</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="decorative-divider">✦</div>
-                
-                <div class="container-narrow text-center mt-5">
-                    <h3 class="serif">Request a Recording</h3>
-                    <p>Are you looking for a specific raga or a recording from a particular festival? Reach out to our media team at media@kirtanpremi.com.</p>
-                </div>
+                <div data-gallery-category="photos"></div>
             </div>
         </section>
     </main>
@@ -99,12 +73,14 @@
                 <div>
                     <h4 class="serif mb-4">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="/">Bio</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/bio.html">Biographies</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/philosophy.html">Philosophy</a></li>
                         <li><a href="/image.html">Image Gallery</a></li>
                         <li><a href="/video.html">Video Gallery</a></li>
                         <li><a href="/audio.html">Audio Gallery</a></li>
+                        <li><a href="/store.html">Products</a></li>
                         <li><a href="/donations.html">Support</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
@@ -121,6 +97,8 @@
             </div>
         </div>
     </footer>
+
+    </div>
 
     <script type="module" src="/script.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>

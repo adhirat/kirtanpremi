@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="theme-wrapper">
     <header class="sticky-header">
         <nav class="nav-container">
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&q=80&w=100&h=100" alt="Avatar" class="header-avatar">
+                    <img src="/assets/gallery/photos/kp1.jpeg" alt="Kirtan Premi portrait" class="header-avatar">
                     <div class="logo-text-group">
                         <span class="logo-text">Kirtan Premi</span>
-                        <span class="logo-tagline">Vibrating The Holy Names</span>
+                        <span class="logo-tagline">Param Vijayate Sri Krishna Sankirtanam</span>
                     </div>
                 </a>
             </div>
@@ -27,35 +28,42 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Bio</a></li>
-                <li><a href="/events.html">Events</a></li>
-                <li><a href="/philosophy.html">Philosophy</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Gallery <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></a>
-                    <div class="dropdown-content">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/bio.html">Bio</a></li>
+                <li class="nav-item"><a href="/events.html">Events</a></li>
+                <li class="nav-item"><a href="/philosophy.html">Philosophy</a></li>
+                <li class="nav-item nav-item-dropdown">
+                    <a href="/gallery.html" class="nav-parent-link">Gallery</a>
+                    <button class="nav-dropdown-toggle" type="button" aria-label="Toggle gallery menu" aria-expanded="false" aria-controls="gallerySubmenu">
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="nav-dropdown-menu" id="gallerySubmenu">
                         <a href="/image.html">Images</a>
                         <a href="/audio.html">Audio</a>
                         <a href="/video.html">Video</a>
                         <a href="/store.html">Products</a>
                     </div>
                 </li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/donations.html" class="btn btn-gold" style="padding: 0.4rem 1.2rem; color: #fff;">SUPPORT</a></li>
+                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                <li class="nav-item"><a href="/donations.html" class="btn btn-gold nav-support-link">Support</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="section section-saffron">
-            <div class="container container-narrow white-text">
-                <h1 class="serif section-title white-text">The Gaudiya Vaishnava Path</h1>
-                <p class="text-center lead-text white-text">"Bhakti is not a sentiment; it is a science of the soul."</p>
+        <section class="section section-cream philosophy-section">
+            <div class="container container-narrow">
+                <div class="philosophy-hero">
+                    <span class="gallery-section-label">Philosophy</span>
+                    <h1 class="serif section-title">The Gaudiya Vaishnava Path</h1>
+                    <p class="subtitle-page">Bhakti is not a sentiment; it is a science of the soul.</p>
+                </div>
 
                 <div class="philosophy-detailed">
                     <div class="philosophy-card-plain">
                         <h3 class="serif">Navadha Bhakti: The Nine Processes</h3>
                         <p>In the Srimad Bhagavatam (7.5.23), Prahlada Maharaja explains the nine primary ways to serve the Lord:</p>
-                        <ul class="philosophy-list white-text">
+                        <ul class="philosophy-list">
                             <li><strong>Sravanam:</strong> Hearing about the Lord (the root of all bhakti).</li>
                             <li><strong>Kirtanam:</strong> Chanting His glories (the yuga-dharma).</li>
                             <li><strong>Smaranam:</strong> Remembering His form and pastimes.</li>
@@ -79,9 +87,9 @@
                     </div>
 
                     <div class="verse-box mt-5">
-                        <p class="white-text">"harer nama harer nama harer namaiva kevalam<br>kalau nasty eva nasty eva nasty eva gatir anyatha</p>
-                        <p class="white-text mt-2">In this age of quarrel and hypocrisy, the only means of deliverance is chanting the holy name of the Lord. There is no other way. There is no other way. There is no other way."</p>
-                        <span class="verse-source white-text">— Brihan-naradiya Purana</span>
+                        <p>"harer nama harer nama harer namaiva kevalam<br>kalau nasty eva nasty eva nasty eva gatir anyatha"</p>
+                        <p class="mt-2">In this age of quarrel and hypocrisy, the only means of deliverance is chanting the holy name of the Lord. There is no other way. There is no other way. There is no other way.</p>
+                        <span class="verse-source">Brihan-naradiya Purana</span>
                     </div>
                 </div>
             </div>
@@ -103,12 +111,14 @@
                 <div>
                     <h4 class="serif mb-4">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="/">Bio</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/bio.html">Biographies</a></li>
                         <li><a href="/events.html">Events</a></li>
                         <li><a href="/philosophy.html">Philosophy</a></li>
                         <li><a href="/image.html">Image Gallery</a></li>
                         <li><a href="/video.html">Video Gallery</a></li>
                         <li><a href="/audio.html">Audio Gallery</a></li>
+                        <li><a href="/store.html">Products</a></li>
                         <li><a href="/donations.html">Support</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
@@ -125,6 +135,8 @@
             </div>
         </div>
     </footer>
+
+    </div>
 
     <script type="module" src="/script.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>

@@ -18,7 +18,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+        bio: path.resolve(__dirname, 'bio.html'),
         philosophy: path.resolve(__dirname, 'philosophy.html'),
+        gallery: path.resolve(__dirname, 'gallery.html'),
+        galleryAudio: path.resolve(__dirname, 'gallery-audio.html'),
+        galleryVideo: path.resolve(__dirname, 'gallery-video.html'),
+        galleryPhotos: path.resolve(__dirname, 'gallery-photos.html'),
         image: path.resolve(__dirname, 'image.html'),
         audio: path.resolve(__dirname, 'audio.html'),
         video: path.resolve(__dirname, 'video.html'),
