@@ -517,10 +517,6 @@ function attachMediaFallbacks() {
   });
 }
 
-    link.innerHTML = `<img src="${asset}" alt="${label}" class="social-icon-image">`;
-  });
-}
-
 // --- E-Commerce Store Logic ---
 function initStore() {
     // Initial products if local storage is empty
