@@ -395,7 +395,7 @@ function renderVideoAlbum(album) {
               <div class="gallery-media-card">
                 <video
                   controls
-                  preload="metadata"
+                  preload="none"
                   class="gallery-video-player"
                   ${item.poster ? `poster="${item.poster}"` : ''}
                 >
@@ -516,21 +516,6 @@ function attachMediaFallbacks() {
     );
   });
 }
-
-function hydrateFooterSocialIcons() {
-  const iconMap = {
-    Instagram: './assets/images/instagramsymbol.jpeg',
-    Facebook: './assets/images/facebookLogo.png',
-    YouTube: './assets/images/youtubelogo.png',
-  };
-
-  document.querySelectorAll('.social-icon').forEach((link) => {
-    const label = link.getAttribute('aria-label');
-    const asset = label ? iconMap[label] : null;
-
-    if (!asset) {
-      return;
-    }
 
     link.innerHTML = `<img src="${asset}" alt="${label}" class="social-icon-image">`;
   });
