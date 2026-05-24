@@ -199,14 +199,14 @@ function loadStaticContent() {
     testimonialsList.innerHTML = `
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="/assets/gallery/photos/kp2.jpeg" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
+          <img src="/assets/images/kp2.jpeg" alt="Radhika Dasi" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Radhika Dasi</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"The kirtans led by Kirtan Premi Prabhu have a way of transporting you straight to Vrindavan. Truly soul-stirring."</p>
       </div>
       <div class="testimonial-card">
         <div class="flex items-center gap-4 mb-4">
-          <img src="/assets/gallery/photos/kkmaharaj.jpeg" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
+          <img src="/assets/images/kkmaharaj.jpeg" alt="Jagannath Das" class="w-12 h-12 rounded-full object-cover">
           <div class="testimonial-author font-serif font-semibold text-lg">— Jagannath Das</div>
         </div>
         <p class="testimonial-quote italic text-gray-700">"A beautiful experience. The melody and the devotion behind every name chanted is palpable."</p>
@@ -519,9 +519,9 @@ function attachMediaFallbacks() {
 
 function hydrateFooterSocialIcons() {
   const iconMap = {
-    Instagram: './assets/gallery/photos/instagramsymbol.jpeg',
-    Facebook: './assets/gallery/photos/facebookLogo.png',
-    YouTube: './assets/gallery/photos/youtubelogo.png',
+    Instagram: './assets/images/instagramsymbol.jpeg',
+    Facebook: './assets/images/facebookLogo.png',
+    YouTube: './assets/images/youtubelogo.png',
   };
 
   document.querySelectorAll('.social-icon').forEach((link) => {
@@ -544,21 +544,21 @@ function initStore() {
             id: '1',
             name: 'Premium Clay Mridanga',
             price: 250.00,
-            image: './assets/gallery/photos/premiumClayMridanga.jpeg',
+            image: './assets/images/premiumClayMridanga.jpeg',
             description: 'Authentic clay mridanga from Mayapur, professional quality with excellent tuning.'
         },
         {
             id: '2',
             name: 'Vrindavan Tulasi Japa Mala',
             price: 25.00,
-            image: './assets/gallery/photos/tulsiJapaMala.jpeg',
+            image: './assets/images/tulsiJapaMala.jpeg',
             description: 'Hand-carved Tulasi beads crafted by Vrajavasis in Vrindavan.'
         },
         {
             id: '3',
             name: 'Standard Brass Kartals',
             price: 45.00,
-            image: './assets/gallery/photos/kartals.jpeg',
+            image: './assets/images/kartals.jpeg',
             description: 'Heavy resonant bell-metal kartals for long kirtan sessions.'
         }
     ];
