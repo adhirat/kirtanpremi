@@ -662,6 +662,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStore();
   renderOverview();
   renderCategoryPage();
-  hydrateFooterSocialIcons();
   attachMediaFallbacks();
 });
