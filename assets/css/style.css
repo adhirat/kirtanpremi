@@ -354,7 +354,7 @@ h1, h2, h3, h4 {
   min-height: 600px;
   background:
     linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.85)),
-    url('./assets/gallery/photos/vrindavanHD.webp');
+    url('../images/vrindavanHD.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
