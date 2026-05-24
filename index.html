@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300..800;1,300..800&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -54,11 +54,18 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="serif animate-fade-in">Hare Krishna</h1>
-                <p class="subtitle animate-fade-up">an attempt at srila prabhupad's mission</p>
-                <a href="./audio.html" class="btn btn-gold">Listen to Kirtans</a>
+        <section id="home" class="hero-minimal">
+            <div class="hero-minimal-content">
+                <p class="hero-subtitle animate-fade-up">Experience Divinity with</p>
+                <h1 class="serif hero-title animate-fade-in">Kirtan Premi Das</h1>
+                <p class="hero-description animate-fade-up">Propagating the sound incarnation of God through the legacy of Gaudiya Vaishnavism. An attempt at Srila Prabhupada's mission.</p>
+                <div class="hero-actions animate-fade-up">
+                    <a href="./audio.html" class="btn btn-gold">Listen to Kirtans</a>
+                    <a href="./bio.html" class="btn btn-outline">Read Biography</a>
+                </div>
+            </div>
+            <div class="hero-minimal-image animate-fade-in">
+                <img src="./assets/gallery/photos/kp1.jpeg" alt="Kirtan Premi Das">
             </div>
         </section>
 
@@ -79,47 +86,42 @@
                 <h2 class="serif section-title text-center">Spiritual Lineage & Biographies</h2>
                 <p class="text-center subtitle-page mb-5">Honoring the masters who paved the way for the global Sankirtan revolution.</p>
                 
-                <div class="bio-grid">
-                    <!-- Kirtan Premi Prabhu -->
-                    <div class="bio-card">
-                        <div class="bio-img-wrapper">
-                            <img src="./assets/gallery/photos/kp1.jpeg" alt="Kirtan Premi Prabhu" class="bio-img">
-                        </div>
-                        <div class="bio-details">
-                            <h3 class="serif">Kirtan Premi Prabhu</h3>
-                            <p class="lead-text">"Kirtan is the breath of the soul."</p>
-                            <p>A dedicated servant of the Holy Name, Kirtan Premi Prabhu has spent decades travelling and sharing the bliss of Mahaprabhu's mission. His kirtans are known for their deep meditative quality and soul-stirring melodies.</p>
-                            <p>Having served extensively in the Vrindavan 24-hour kirtan team, he imbibed the "Aindra-style" of kirtan—characterized by its intensity, rhythmic complexity, and unwavering focus on the pleasure of Radha-Shyamasundara. His mission is to bring this same Vrindavan spirit to Every Town and Village.</p>
-                        </div>
+                <div class="content-split">
+                    <div class="content-split-image">
+                        <img src="./assets/gallery/photos/prabhupad1.jpeg" alt="Srila Prabhupada">
                     </div>
-
-                    <!-- Aindra Prabhu -->
-                    <div class="bio-card">
-                        <div class="bio-img-wrapper">
-                            <img src="./assets/gallery/photos/aindra1.jpeg" alt="Aindra Prabhu" class="bio-img">
-                        </div>
-                        <div class="bio-details">
-                            <h3 class="serif">Aindra Prabhu</h3>
-                            <p>The visionary pioneer of the 24-hour Kirtan at Krishna Balaram Mandir, Vrindavan. For over 24 years, Aindra Prabhu personally led the kirtan team, rarely leaving the holy dhama. He transformed the landscape of modern kirtan by re-introducing classical ragas and a deep sense of 'bhava'.</p>
-                            <p>His legacy is not just in the recordings he left behind, but in the thousands of "Aindra-generation" kirtaniyas who now carry the flame of the Mahamantra with artistic excellence and spiritual fervor.</p>
-                        </div>
-                    </div>
-
-                    <!-- Srila Prabhupada -->
-                    <div class="bio-card">
-                        <div class="bio-img-wrapper">
-                            <img src="./assets/gallery/photos/prabhupad1.jpeg" alt="Srila Prabhupada" class="bio-img">
-                        </div>
-                        <div class="bio-details">
-                            <h3 class="serif">Srila Prabhupada</h3>
-                            <p>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (1896-1977). At the age of 69, he traveled alone to New York with only a few dollars and a trunk of translations. Within 12 years, he established over 100 temples and initiated thousands into the chanting of Hare Krishna.</p>
-                            <p>He is the "Senapati Bhakta" (Commander-in-Chief) foretold by Lord Chaitanya, who would spread the Holy Name in every corner of the globe. Every mridanga beat heard today in the West is a testament to his miraculous compassion.</p>
-                        </div>
+                    <div class="content-split-text">
+                        <h2>Srila Prabhupada</h2>
+                        <p>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (1896-1977). At the age of 69, he traveled alone to New York with only a few dollars and a trunk of translations. Within 12 years, he established over 100 temples and initiated thousands into the chanting of Hare Krishna.</p>
+                        <p>He is the "Senapati Bhakta" (Commander-in-Chief) foretold by Lord Chaitanya, who would spread the Holy Name in every corner of the globe. Every mridanga beat heard today in the West is a testament to his miraculous compassion.</p>
+                        <a href="./bio.html" class="btn btn-outline">Read Full Biography</a>
                     </div>
                 </div>
 
-                <div class="decorative-divider">✦ ✦ ✦</div>
-                
+                <div class="content-split reverse">
+                    <div class="content-split-image">
+                        <img src="./assets/gallery/photos/aindra1.jpeg" alt="Aindra Prabhu">
+                    </div>
+                    <div class="content-split-text">
+                        <h2>Aindra Prabhu</h2>
+                        <p>The visionary pioneer of the 24-hour Kirtan at Krishna Balaram Mandir, Vrindavan. For over 24 years, Aindra Prabhu personally led the kirtan team, rarely leaving the holy dhama. He transformed the landscape of modern kirtan by re-introducing classical ragas and a deep sense of 'bhava'.</p>
+                        <p>His legacy is not just in the recordings he left behind, but in the thousands of "Aindra-generation" kirtaniyas who now carry the flame of the Mahamantra with artistic excellence and spiritual fervor.</p>
+                        <a href="./bio.html" class="btn btn-outline">Discover His Legacy</a>
+                    </div>
+                </div>
+
+                <div class="content-split">
+                    <div class="content-split-image">
+                        <img src="./assets/gallery/photos/kp1.jpeg" alt="Kirtan Premi Prabhu">
+                    </div>
+                    <div class="content-split-text">
+                        <h2>Kirtan Premi Prabhu</h2>
+                        <p>"Kirtan is the breath of the soul."</p>
+                        <p>A dedicated servant of the Holy Name, Kirtan Premi Prabhu has spent decades travelling and sharing the bliss of Mahaprabhu's mission. His kirtans are known for their deep meditative quality and soul-stirring melodies.</p>
+                        <p>Having served extensively in the Vrindavan 24-hour kirtan team, he imbibed the "Aindra-style" of kirtan—characterized by its intensity, rhythmic complexity, and unwavering focus on the pleasure of Radha-Shyamasundara.</p>
+                    </div>
+                </div>
+
                 <div class="container-narrow text-center mt-5">
                     <h3 class="serif">The Guru-Shishya Parampara</h3>
                     <p>Knowledge is like a river; it must flow from the source through an unbroken chain of authorized teachers. We belong to the Brahma-Madhva-Gaudiya Sampradaya, ensuring that the message of the Srimad Bhagavatam remains pure and undiluted.</p>
