@@ -193,6 +193,17 @@ h1, h2, h3, h4 {
 .nav-parent-link.active-link,
 .nav-dropdown-toggle.active-link {
   color: var(--saffron);
+  position: relative;
+}
+.nav-links a.active-link::after,
+.nav-parent-link.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--saffron);
 }
 
 .nav-item {
@@ -337,26 +348,31 @@ h1, h2, h3, h4 {
   color: var(--white);
 }
 
-/* Minimalist Hero Layout */
-.hero-minimal {
+/* Immersive Hero Layout */
+.hero-immersive {
+  height: 90vh;
+  min-height: 600px;
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.85)),
+    url('./assets/gallery/photos/vrindavanHD.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 8rem 1.5rem;
-  gap: 4rem;
-  min-height: 85vh;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
 }
 
-.hero-minimal-content {
-  flex: 1;
-  max-width: 600px;
+.hero-immersive-content {
+  max-width: 850px;
+  padding: 0 2rem;
 }
 
 .hero-subtitle {
   font-family: var(--f-sans);
-  color: var(--gold-dark);
+  color: var(--saffron-light);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -364,56 +380,43 @@ h1, h2, h3, h4 {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   line-height: 1.1;
-  color: var(--ink);
+  color: var(--white);
   margin-bottom: 1.5rem;
   font-family: var(--f-serif);
+  text-shadow: 0 4px 30px rgba(0,0,0,0.6);
 }
 
 .hero-description {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.5rem;
   line-height: 1.8;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.hero-minimal-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+.btn-outline-white {
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: transparent;
 }
 
-.hero-minimal-image img {
-  max-width: 100%;
-  height: auto;
-  max-height: 600px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  object-fit: cover;
+.btn-outline-white:hover {
+  background: var(--white);
+  color: var(--ink);
 }
 
 @media (max-width: 900px) {
-  .hero-minimal {
-    flex-direction: column;
-    text-align: center;
-    padding: 4rem 1.5rem;
-    gap: 3rem;
-  }
-  .hero-minimal-content {
-    margin: 0 auto;
-  }
-  .hero-actions {
-    justify-content: center;
-  }
   .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
