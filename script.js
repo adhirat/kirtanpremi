@@ -519,9 +519,9 @@ function attachMediaFallbacks() {
 
 function hydrateFooterSocialIcons() {
   const iconMap = {
-    Instagram: '/assets/gallery/photos/instagramsymbol.jpeg',
-    Facebook: '/assets/gallery/photos/facebookLogo.png',
-    YouTube: '/assets/gallery/photos/youtubelogo.png',
+    Instagram: './assets/gallery/photos/instagramsymbol.jpeg',
+    Facebook: './assets/gallery/photos/facebookLogo.png',
+    YouTube: './assets/gallery/photos/youtubelogo.png',
   };
 
   document.querySelectorAll('.social-icon').forEach((link) => {
@@ -544,21 +544,21 @@ function initStore() {
             id: '1',
             name: 'Premium Clay Mridanga',
             price: 250.00,
-            image: '/assets/gallery/photos/premiumClayMridanga.jpeg',
+            image: './assets/gallery/photos/premiumClayMridanga.jpeg',
             description: 'Authentic clay mridanga from Mayapur, professional quality with excellent tuning.'
         },
         {
             id: '2',
             name: 'Vrindavan Tulasi Japa Mala',
             price: 25.00,
-            image: '/assets/gallery/photos/tulsiJapaMala.jpeg',
+            image: './assets/gallery/photos/tulsiJapaMala.jpeg',
             description: 'Hand-carved Tulasi beads crafted by Vrajavasis in Vrindavan.'
         },
         {
             id: '3',
             name: 'Standard Brass Kartals',
             price: 45.00,
-            image: '/assets/gallery/photos/kartals.jpeg',
+            image: './assets/gallery/photos/kartals.jpeg',
             description: 'Heavy resonant bell-metal kartals for long kirtan sessions.'
         }
     ];
