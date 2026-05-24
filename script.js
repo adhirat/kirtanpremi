@@ -615,43 +615,33 @@ function highlightActiveLink() {
   const galleryParentLink = document.querySelector('.nav-parent-link');
   const galleryToggle = document.querySelector('.nav-dropdown-toggle');
 
+  const galleryPaths = ['/gallery', '/image.html', '/audio.html', '/video.html', '/store.html'];
+  const isGalleryPage = galleryPaths.some(path => currentPath.includes(path));
+
   document.querySelectorAll('.nav-links a').forEach((link) => {
+    if (link.classList.contains('nav-support-link')) return;
+
     const href = link.getAttribute('href');
+    if (!href) return;
 
-    if (!href) {
-      return;
-    }
+    // Resolve the relative path against the current URL accurately
+    const linkUrl = new URL(href, window.location.href).pathname;
+    
+    // Normalize paths by removing trailing slashes and index.html
+    const normCurrent = currentPath.replace(/\/index\.html$/, '').replace(/\/$/, '');
+    const normLink = linkUrl.replace(/\/index\.html$/, '').replace(/\/$/, '');
 
-    const isHome = currentPath === '/' || currentPath === '/index.html';
-    const linkIsHome = href === '/' || href === '/index.html';
-    const galleryPaths = new Set([
-      '/gallery.html',
-      '/image.html',
-      '/audio.html',
-      '/video.html',
-      '/gallery-audio.html',
-      '/gallery-video.html',
-      '/gallery-photos.html',
-    ]);
-    const isGalleryPage = galleryPaths.has(currentPath);
-
-    const isActive =
-      (isHome && linkIsHome) ||
-      (!isHome && href !== '/' && currentPath === href) ||
-      (href !== '/' && href !== '/index.html' && currentPath.endsWith(href));
-
-    if (isActive) {
+    if (normCurrent === normLink || (normCurrent === '' && normLink === '')) {
       link.classList.add('active-link');
     }
-
-    if (isGalleryPage && href === '/gallery.html' && galleryParentLink) {
-      galleryParentLink.classList.add('active-link');
-
-      if (galleryToggle) {
-        galleryToggle.classList.add('active-link');
-      }
-    }
   });
+
+  if (isGalleryPage && galleryParentLink) {
+    galleryParentLink.classList.add('active-link');
+    if (galleryToggle) {
+      galleryToggle.classList.add('active-link');
+    }
+  }
 }
 
 // --- Initialization ---
